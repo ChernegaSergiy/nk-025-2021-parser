@@ -41,14 +41,14 @@ class Parser
             $this->collection->add(new Classification(
                 class: $row[0] ?? '',
                 chapter: $row[1] ?? '',
-                codeRange: $row[2] ?? '',
-                subCategory: $row[3] ?? '',
+                code_range: $row[2] ?? '',
+                sub_category: $row[3] ?? '',
                 code: $row[4] ?? '',
-                nameEn: $row[5] ?? '',
-                nameUa: $row[6] ?? '',
-                specificCode: $row[7] ?? '',
-                specificNameEn: $row[8] ?? '',
-                specificNameUa: $row[9] ?? '',
+                name_en: $row[5] ?? '',
+                name_ua: $row[6] ?? '',
+                specific_code: $row[7] ?? '',
+                specific_name_en: $row[8] ?? '',
+                specific_name_ua: $row[9] ?? '',
             ));
         }
 

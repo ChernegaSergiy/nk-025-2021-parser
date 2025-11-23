@@ -41,7 +41,7 @@ class ClassificationCollection implements IteratorAggregate, Countable
     public function findBySpecificCode(string $specificCode): ?Classification
     {
         foreach ($this->classifications as $classification) {
-            if ($classification->specificCode === $specificCode) {
+            if ($classification->specific_code === $specificCode) {
                 return $classification;
             }
         }
@@ -54,10 +54,10 @@ class ClassificationCollection implements IteratorAggregate, Countable
         $results = new self();
         foreach ($this->classifications as $classification) {
             if (
-                stripos($classification->nameUa, $query) !== false ||
-                stripos($classification->nameEn, $query) !== false ||
-                stripos($classification->specificNameUa, $query) !== false ||
-                stripos($classification->specificNameEn, $query) !== false
+                stripos($classification->name_ua, $query) !== false ||
+                stripos($classification->name_en, $query) !== false ||
+                stripos($classification->specific_name_ua, $query) !== false ||
+                stripos($classification->specific_name_en, $query) !== false
             ) {
                 $results->add($classification);
             }

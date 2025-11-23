@@ -7,14 +7,14 @@ class Classification
     public function __construct(
         public readonly string $class,
         public readonly string $chapter,
-        public readonly string $codeRange,
-        public readonly string $subCategory,
+        public readonly string $code_range,
+        public readonly string $sub_category,
         public readonly string $code,
-        public readonly string $nameEn,
-        public readonly string $nameUa,
-        public readonly string $specificCode,
-        public readonly string $specificNameEn,
-        public readonly string $specificNameUa,
+        public readonly string $name_en,
+        public readonly string $name_ua,
+        public readonly string $specific_code,
+        public readonly string $specific_name_en,
+        public readonly string $specific_name_ua,
     ) {
     }
 }

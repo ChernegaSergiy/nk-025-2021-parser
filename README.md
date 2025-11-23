@@ -34,7 +34,7 @@ try {
 
     // Iterate over all classifications
     foreach ($classifications as $classification) {
-        echo $classification->nameUa . PHP_EOL;
+        echo $classification->name_ua . PHP_EOL;
     }
 
     // Get the total count
@@ -55,10 +55,10 @@ You can find a classification by its code or specific code.
 // ...
 
 $cholera = $parser->findByCode('A00');
-echo $cholera->nameUa; // Холера
+echo $cholera->name_ua; // Холера
 
 $choleraBiotar = $parser->findBySpecificCode('A00.0');
-echo $choleraBiotar->nameUa; // Холера, спричинена холерним вібріоном 01, biovar cholera
+echo $choleraBiotar->name_ua; // Холера, спричинена холерним вібріоном 01, biovar cholera
 ```
 
 ### Searching for Classifications
@@ -73,7 +73,7 @@ You can search for classifications by name (in either Ukrainian or English).
 $results = $parser->searchByName('тиф');
 
 foreach ($results as $result) {
-    echo $result->specificCode . ': ' . $result->specificNameUa . PHP_EOL;
+    echo $result->specific_code . ': ' . $result->specific_name_ua . PHP_EOL;
 }
 ```
 
