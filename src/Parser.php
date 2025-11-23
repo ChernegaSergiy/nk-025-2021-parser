@@ -1,6 +1,6 @@
 <?php
 
-namespace Meddata\Nk0252021Parser;
+namespace ChernegaSergiy\Nk0252021Parser;
 
 class Parser
 {

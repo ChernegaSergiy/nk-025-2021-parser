@@ -1,5 +1,5 @@
 {
-    "name": "meddata/nk-025-2021-parser",
+    "name": "chernegasergiy/nk-025-2021-parser",
     "description": "A PHP library to parse the NK-025-2021 medical classifications from meddata.pp.ua.",
     "type": "library",
     "license": "MIT",
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Meddata\\Nk0252021Parser\\": "src/"
+            "ChernegaSergiy\\Nk0252021Parser\\": "src/"
         }
     }
 }

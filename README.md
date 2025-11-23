@@ -7,7 +7,7 @@ A PHP library to parse the NK-025-2021 medical classifications from [meddata.pp.
 You can install the package via Composer:
 
 ```bash
-composer require meddata/nk-025-2021-parser
+composer require chernegasergiy/nk-025-2021-parser
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ composer require meddata/nk-025-2021-parser
 
 require 'vendor/autoload.php';
 
-use Meddata\Nk0252021Parser\Parser;
+use ChernegaSergiy\Nk0252021Parser\Parser;
 
 $parser = new Parser();
 
